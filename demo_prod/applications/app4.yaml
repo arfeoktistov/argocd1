@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-      - values_dev.yaml
+      - values_prod.yaml
       parameters:
       - name: "container.image"
         value: temson13/temson13
@@ -26,4 +26,4 @@ spec:
       prune   : true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true
+      - CreateNamespace=true   
